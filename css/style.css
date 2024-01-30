@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-container {
+	width: 600px;
+	height: 600px;
+	background-color: pink;
+	flex-direction: column;
+	display: flex;
+}
+
+.user-input-container {
+	flex-basis: 30%;
+	background-color: antiquewhite;
+	border: 2px solid black;
+}
+
+.conversion-container {
+	flex-basis:  70%;
+}
