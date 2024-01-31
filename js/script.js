@@ -1,9 +1,11 @@
+import key from './key.js'
+
 const ul = document.querySelector('ul');
 const convertButton = document.querySelector('button');
 const userInput = document.querySelector('input');
 
 
-fetch('https://v6.exchangerate-api.com/v6/4739989cb73cfcfbd02e44e7/latest/USD')
+fetch(`https://v6.exchangerate-api.com/v6/${key}/latest/USD`)
 .then((res) => res.json())
 .then((data) => {
 	renderData(data.conversion_rates);
